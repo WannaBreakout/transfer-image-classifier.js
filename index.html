@@ -1,22 +1,33 @@
+<!DOCTYPE html>
 <html>
   <head>
+  <title>transfer learning with tfjs mobilenet and knn-classifier</title>  
+
     <!-- Load the latest version of TensorFlow.js -->
     <script src="https://unpkg.com/@tensorflow/tfjs"></script>
     <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
     <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
   </head>
   <body>
-    <div id="console"></div>
-    <!-- Add an image that we will use to test -->
-      <!-- <video autoplay playsinline muted id="webcam" width="224" height="224"></video> -->
-      <!--<img id="img" crossOrigin src="https://i.imgur.com/JlUvsxa.jpg" width=227 height=227/> -->
-      <img id="img0" src="wa.jpg" width="224" height="224"></img>
-      <button id="class-a">Classify A</button>
-      <img id="img1" src="wb.jpg" width="224" height="224"></img>
-      <button id="class-b">Classify B</button>
-      <img id="img2" src="wc.jpg" width="224" height="224"></img>
-      <button id="class-c">Classify C</button>
-      <!-- Load index.js after the content of the page -->
+    <div class="page">
+      <div class="section header">
+        <h1>Transfer Learning using... </h1>
+        <h3>tfjs - mobilenet - knn-classifier</h3>
+      </div>
+      <div id="console"></div>
+      <div class="section webcam-display">
+        <!-- video autoplay playsinline muted id="webcam" -->
+        <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+      </div>
+      <div class="section buttons">
+
+        <button id="class-a">Add A</button>
+        <button id="class-b">Add B</button>
+        <button id="class-c">Add C</button>
+        <button id="class-z">Add Zzzz</button>
+      </div>
+    </div>
+    <!-- Load index.js after the content of the page -->
     <script src="index.js"></script>
   </body>
 </html>
